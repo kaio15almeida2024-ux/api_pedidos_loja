@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<link rel="stylesheet" href="pedidos.css">
+<a href="index.html">
+    <button>
+        Consultar clientes
+    </button>
+</a>
+<body>
+     
+    <div class="container2">
+        <h1>Consulta de Pedidos</h1>
+        <ul id="Pedidos-Lista">
+        </ul>
+
+        <div class="container2">
+            <h1>Cadastro de Pedidos</h1>
+            <ul id="Cadastro-Pedido">
+             
+             <h2>DESCRIÇÃO:</h2>
+             <input type="text" id="descricaopedido" placeholder="digite a descrição do pedido aqui" style="width: 202px;">
+             <h2>VALOR:</h2>
+             <input type="text" id="valorpedido" placeholder="digite o valor aqui">
+             <br><br>
+             <select id="clientepedido">
+                <option value="">Selecione um cliente</option>
+                 
+            </select> 
+
+
+             <br><br>
+             <input type="button" value="CADASTRAR" onclick="cadastrarpedido()">
+             <input type="button" value="ATUALIZAR" onclick="atualizarpedido()">
+            </ul> <BR></BR>
+        </div>
+    
+
+
+</body>
+<script src="pedidos.js"></script>
+</html>
